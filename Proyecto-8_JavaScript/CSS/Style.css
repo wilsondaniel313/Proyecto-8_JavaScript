@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    background-color: rgba(3, 198, 220, 0.886);
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 90vh; 
+   
+}
+.navidad{
+    display: flex;
+    align-items: center;
+    margin-right: 550px;
+    text-align: center;
+}
+.felizNavideño{
+    margin-left: 115px;
+    color: #ff4733; 
+    font-weight: bold; 
+    font-size: 20px;
+}
+.botones{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-right: 550px;
+    margin-top: 60px;
+}
+.boton {
+    background-color: white;
+    color: red;
+    padding: 10px 20px;
+    border: 2px solid red;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 15px;
+}
+
+.boton:hover {
+    background-color: #c0392b;
+    color: white;
+}
+
+.boton.playing {
+    background-color: red;
+    color: white;
+}
+
+#dia,#hora,#minuto,#segundo{
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 0px 0px 3px 2px rgb(238, 223, 223);
+    border-radius: 30px;
+    color: rgb(255, 255, 255);
+    width: 14vh;
+    height: 9vh;
+    line-height: 9vh; 
+    text-align: center;
+    margin: 10px;
+    margin-right: 10px; 
+    margin-top: 30px;
+}
+
+#segundo {
+    margin-right: 0px; 
+}
+
+.tiempo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.valor {
+    font-size: 24px; 
+}
+
+.letra {
+    font-size: 18px; 
+    color: rgb(255, 255, 255);
+    font-weight: bold; 
+}
+
+#NoelOff{
+    background-size: 500px;
+    width: 480px;
+    height: 390px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    background-image: url("../img/papaNoel___53655569b0bf60c___.png");
+    margin-left: -450px;
+}
+
+#NoelOff.on{
+    background-image: url("../img/papaNoel___62655569b19f62b___.gif");
+}
